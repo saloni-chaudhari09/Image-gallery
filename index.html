@@ -1,0 +1,102 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Image Gallery</h1>
+            <p>Explore beautiful images with smooth transitions and filtering</p>
+        </header>
+
+        <div class="filter-controls">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="architecture">Architecture</button>
+            <button class="filter-btn" data-filter="animals">Animals</button>
+            <button class="filter-btn" data-filter="travel">Travel</button>
+            <button class="filter-btn" data-filter="Person">Person</button>
+            <button class="filter-btn" data-filter="Cartoon">Cartoon</button>
+        </div>
+
+        <div class="gallery">
+            <!-- Nature Images -->
+            <div class="gallery-item" data-category="nature">
+                <img src="C:\Users\AC\Desktop\Image gallery\forest.jpg" alt="Forest" class="gallery-img">
+                <div class="gallery-caption">Beautiful Forest Landscape</div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="C:\Users\AC\Desktop\Image gallery\download (1).jpg" alt="Mountain" class="gallery-img">
+                <div class="gallery-caption">Majestic Mountain View</div>
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="waterfall.jpg" alt="Waterfall" class="gallery-img">
+                <div class="gallery-caption">Stunning Waterfall</div>
+            </div>
+
+            <!-- Architecture Images -->
+            <div class="gallery-item" data-category="architecture">
+                <img src="C:\Users\AC\Desktop\Image gallery\Architecture.jpg" alt="Building" class="gallery-img">
+                <div class="gallery-caption">Modern Architecture</div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="bridge.jpg" alt="Bridge" class="gallery-img">
+                <div class="gallery-caption">Iconic Bridge</div>
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="city.jpg" alt="Skyscraper" class="gallery-img">
+                <div class="gallery-caption">City Skyscraper</div>
+            </div>
+
+            <!-- Animal Images -->
+            <div class="gallery-item" data-category="animals">
+                <img src="C:\Users\AC\Desktop\Image gallery\lion.jpg" alt="Lion" class="gallery-img">
+                <div class="gallery-caption">Wild Lion</div>
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="C:\Users\AC\Desktop\Image gallery\elephant.jpg" alt="Elephant" class="gallery-img">
+                <div class="gallery-caption">Gentle Elephant</div>
+            </div>
+            <div class="gallery-item" data-category="animals">
+                <img src="colour birds.jpg" alt="Bird" class="gallery-img">
+                <div class="gallery-caption">Colorful Bird</div>
+            </div>
+
+            <!-- Travel Images -->
+            <div class="gallery-item" data-category="travel">
+                <img src="C:\Users\AC\Desktop\Image gallery\tropical beech.jpg" alt="Beach" class="gallery-img">
+                <div class="gallery-caption">Tropical Beach</div>
+            </div>
+            <div class="gallery-item" data-category="travel">
+                <img src="C:\Users\AC\Desktop\Image gallery\paris.jpg" alt="City" class="gallery-img">
+                <div class="gallery-caption">Vibrant City</div>
+            </div>
+            <div class="gallery-item" data-category="travel">
+                <img src="C:\Users\AC\Desktop\Image gallery\local ,arket.jpg" alt="Market" class="gallery-img">
+                <div class="gallery-caption">Local Market</div>
+            </div>
+           
+    
+            
+        </div>
+    </div>
+   <!-- Lightbox -->
+    <div class="lightbox">
+        <span class="lightbox-close"><i class="fas fa-times"></i></span>
+        <span class="lightbox-nav lightbox-prev"><i class="fas fa-chevron-left"></i></span>
+        <span class="lightbox-nav lightbox-next"><i class="fas fa-chevron-right"></i></span>
+        <div class="lightbox-content">
+            <img src="" alt="" class="lightbox-img">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
